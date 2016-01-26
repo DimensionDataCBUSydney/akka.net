@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Akka.DI.Core</RootNamespace>
     <AssemblyName>Akka.DI.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion><SignAssembly>true</SignAssembly><AssemblyOriginatorKeyFile>..\..\..\..\DDCloud-Public.snk</AssemblyOriginatorKeyFile>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

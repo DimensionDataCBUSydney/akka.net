@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Akka.Serialization.Wire</RootNamespace>
     <AssemblyName>Akka.Serialization.Wire</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion><SignAssembly>true</SignAssembly><AssemblyOriginatorKeyFile>..\..\..\..\DDCloud-Public.snk</AssemblyOriginatorKeyFile>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

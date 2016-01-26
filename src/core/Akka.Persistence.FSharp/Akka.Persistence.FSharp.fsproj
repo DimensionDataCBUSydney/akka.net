@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Akka.Persistence.FSharp</RootNamespace>
     <AssemblyName>Akka.Persistence.FSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion><SignAssembly>true</SignAssembly><AssemblyOriginatorKeyFile>..\..\..\DDCloud-Public.snk</AssemblyOriginatorKeyFile>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>Akka.Persistence.FSharp</Name>
   </PropertyGroup>

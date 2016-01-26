@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Akka.MultiNodeTestRunner.Shared</RootNamespace>
     <AssemblyName>Akka.MultiNodeTestRunner.Shared</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion><SignAssembly>true</SignAssembly><AssemblyOriginatorKeyFile>..\..\..\DDCloud-Public.snk</AssemblyOriginatorKeyFile>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
