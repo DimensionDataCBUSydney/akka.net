@@ -325,13 +325,13 @@ module Nuget =
     let getAkkaDependency project =
         match project with
         | "Akka" -> []
-        | "Akka.Cluster" -> ["Akka.Remote", release.NugetVersion]
-        | "Akka.Persistence.TestKit" -> ["Akka.Persistence", preReleaseVersion; "Akka.TestKit.Xunit2", release.NugetVersion]
-        | persistence when (persistence.Contains("Sql") && not (persistence.Equals("Akka.Persistence.Sql.Common"))) -> ["Akka.Persistence.Sql.Common", preReleaseVersion]
-        | persistence when (persistence.StartsWith("Akka.Persistence.")) -> ["Akka.Persistence", preReleaseVersion]
-        | "Akka.DI.TestKit" -> ["Akka.DI.Core", release.NugetVersion; "Akka.TestKit.Xunit2", release.NugetVersion]
-        | di when (di.StartsWith("Akka.DI.") && not (di.EndsWith("Core"))) -> ["Akka.DI.Core", release.NugetVersion]
-        | testkit when testkit.StartsWith("Akka.TestKit.") -> ["Akka.TestKit", release.NugetVersion]
+        | "Akka.Cluster" -> ["DD.Signed.Akka.Remote", release.NugetVersion]
+        | "Akka.Persistence.TestKit" -> ["DD.Signed.Akka.Persistence", preReleaseVersion; "DD.Signed.Akka.TestKit.Xunit2", release.NugetVersion]
+        | persistence when (persistence.Contains("Sql") && not (persistence.Equals("Akka.Persistence.Sql.Common"))) -> ["DD.Signed.Akka.Persistence.Sql.Common", preReleaseVersion]
+        | persistence when (persistence.StartsWith("Akka.Persistence.")) -> ["DD.Signed.Akka.Persistence", preReleaseVersion]
+        | "Akka.DI.TestKit" -> ["DD.Signed.Akka.DI.Core", release.NugetVersion; "DD.Signed.Akka.TestKit.Xunit2", release.NugetVersion]
+        | di when (di.StartsWith("Akka.DI.") && not (di.EndsWith("Core"))) -> ["DD.Signed.Akka.DI.Core", release.NugetVersion]
+        | testkit when testkit.StartsWith("Akka.TestKit.") -> ["DD.Signed.Akka.TestKit", release.NugetVersion]
         | _ -> ["Akka", release.NugetVersion]
 
     // used to add -pre suffix to pre-release packages
